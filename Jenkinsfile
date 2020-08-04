@@ -13,6 +13,16 @@ pipeline {
                             }
                     }
                     stage('Three') {
+                            steps {
+                                    input('Do you want to proceed with UAT?')
+			    }
+		    }
+                    stage('Four') {
+                            steps {
+                                    input('Do you want to proceed with PROD?')
+			    }
+                    }
+                    stage('Five') {
                         when {
                             not {
                                   branch "master"
