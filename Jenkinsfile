@@ -3,13 +3,13 @@ pipeline {
             stages {
                     stage('One') {
                             steps {
-                                    echo 'This is our first Jenkins pipeline'
+                                    echo 'This is a Demo project'
                             }
                     }
                 
                     stage('Two') {
                             steps {
-                                    input('Do you want to proceed?')
+                                    input('Do you want to proceed with DEV?')
                             }
                     }
                     stage('Three') {
@@ -19,7 +19,7 @@ pipeline {
                             }
                         }
                         steps {
-                                echo "Hello"
+                                echo "Done with deployment"
                         }
                     }
                  }
